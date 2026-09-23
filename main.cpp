@@ -47,7 +47,13 @@ int main() {
         default:
             std::println("touche inconnue");
     }
-
+    //exercice 1.5
+    int compte = 10;
+    while (compte > 0) {
+        std::println("{}", compte);
+        compte--;
+    }
+    std::println("decollage");
 
 
 
