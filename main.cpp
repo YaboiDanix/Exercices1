@@ -30,7 +30,23 @@ int main() {
     }else if (pv <= 0) {
         std::println("mort");
     }
-
+//exercice 1.4
+    char touche = 's';
+    switch (touche) {
+        case 'z':
+            std::println("avancer");
+            break;
+        case 's':
+            std::println("reculer");
+            break;
+        case 'q':
+            std::println("gauche");
+            break;
+        case 'd':
+            std::println("droite");
+        default:
+            std::println("touche inconnue");
+    }
 
 
 
