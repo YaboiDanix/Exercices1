@@ -60,6 +60,7 @@ int main() {
         std::cin >> choix;
     }while (choix < 1 || choix > 3 );
     std::println("merci");
-
+//exercice 1.7
+    
     return 0;
 }
