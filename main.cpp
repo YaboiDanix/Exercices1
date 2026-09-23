@@ -54,8 +54,12 @@ int main() {
         compte--;
     }
     std::println("decollage");
-
-
+//exercices 1.6
+    int choix = 0;
+    do {
+        std::cin >> choix;
+    }while (choix < 1 || choix > 3 );
+    std::println("merci");
 
     return 0;
 }
