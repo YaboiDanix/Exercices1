@@ -7,10 +7,12 @@ int main() {
     int pv = 0;
     std::println("PV : {}", pv);
     //exercice 1.1
+    std::println("exercice 1.1");
     if (pv == 0) {
         std::println("game over");
     }
     //exercice 1.2
+    std::println("exercice 1.2");
     int munitions = 7;
     if (munitions % 2) {
         std::println("munitions est impair");
@@ -20,17 +22,21 @@ int main() {
         std::println("munitions est pair");
     }
     //exercice 1.3
+    std::println("exercice 1.3");
     if (pv >= 75) {
         std::println("Point de vie intact");
     }else if (pv<75 && pv >= 41)
     {
         std::println("egratinure");
-    }else if (pv < 41 && pv >= 1) {
+    }else if (pv < 41 && pv >= 1)
+    {
         std::println("point de vie critique");
-    }else if (pv <= 0) {
+    }else if (pv <= 0)
+    {
         std::println("mort");
     }
 //exercice 1.4
+    std::println("exercice 1.4");
     char touche = 'z';
     switch (touche) {
         case 'z':
@@ -55,20 +61,22 @@ int main() {
     }
     std::println("decollage");
 //exercices 1.6
+    std::println("exercice 1.6");
     int choix = 0;
     do {
         std::cin >> choix;
     }while (choix < 1 || choix > 3 );
     std::println("merci");
 //exercice 1.7
-    int l = 1;
-    for (l = 1; l <= 10; l++) {
+    std::println("exercice 1.7");
+    for (int l = 1; l <= 10; l++) {
         std::println("7 * {} = {}", l, 7*l);
     }
-    for (l =10; l>=1 ;l--) {
+    for (int l =10; l>=1 ;l--) {
         std::println("7 * {} = {}", l, 7*l);
     }
     //exercice 1.8
+    std::println("exercice 1.8");
     int b = 1;
     while (b < 100) {
         std::println("{}", b);
@@ -84,7 +92,19 @@ int main() {
             continue;
         }
         std::println("{}", c);
-
     }
+//exercice 1.9
+        std::println("exercice 1.9");
+        for (int a = 1; a < 30 ;a++) {
+            if (a % 3 == 0 && a % 5 == 0) {
+            std::println("FizzBuzz");
+            }else if (a % 3 == 0) {
+                std::println("Fizz");
+            }else if (a % 5 == 0) {
+                std::println("Buzz");
+            }
+            std::println("{}", a);
+        }
+
     return 0;
 }
