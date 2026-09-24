@@ -31,7 +31,7 @@ int main() {
         std::println("mort");
     }
 //exercice 1.4
-    char touche = 's';
+    char touche = 'z';
     switch (touche) {
         case 'z':
             std::println("avancer");
@@ -61,6 +61,12 @@ int main() {
     }while (choix < 1 || choix > 3 );
     std::println("merci");
 //exercice 1.7
-    
+    int l = 1;
+    for (l = 1; l <= 10; l++) {
+        std::println("7 * {} = {}", l, 7*l);
+    }
+    for (l =10; l>=1 ;l--) {
+        std::println("7 * {} = {}", l, 7*l);
+    }
     return 0;
 }
