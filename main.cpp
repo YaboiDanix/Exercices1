@@ -68,5 +68,23 @@ int main() {
     for (l =10; l>=1 ;l--) {
         std::println("7 * {} = {}", l, 7*l);
     }
+    //exercice 1.8
+    int b = 1;
+    while (b < 100) {
+        std::println("{}", b);
+        b++;
+        if (b / 17) {
+            break;
+        }
+    }
+    int c = 0;
+    while (c < 30) {
+        c++;
+        if (c % 3 == 0) {
+            continue;
+        }
+        std::println("{}", c);
+
+    }
     return 0;
 }
